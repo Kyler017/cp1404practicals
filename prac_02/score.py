@@ -22,5 +22,15 @@ def student_socre(score):
     else:
         print("Bad")
 
+def random_score(random_number):
+    if random_number < 0 or random_number > 100:
+        print("Invalid score")
+    elif 90 > random_number >= 50:
+        print("Passable")
+    elif random_number >= 90:
+        print("Excellent")
+    else:
+        print("Bad")
 
+main()
 
