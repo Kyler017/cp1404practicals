@@ -26,4 +26,6 @@ def main():
 def celsiusfahrenheit(celsius):
     return celsius * 9.0 / 5 + 32
 
-
+def fahrenheitcelsius(fahrenheit):
+    return  5 / 9 * (fahrenheit - 32)
+main()
