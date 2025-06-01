@@ -23,4 +23,7 @@ def main():
         choice = input(">>> ").upper()
     print("Thank you.")
 
+def celsiusfahrenheit(celsius):
+    return celsius * 9.0 / 5 + 32
+
 
