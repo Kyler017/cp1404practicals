@@ -20,7 +20,7 @@ def main():
         else:
             print("Invalid option")
         print(MENU)
-        choice = input(">>> ").upper()
+        choice = input(">>> ").upper()`
     print("Thank you.")
 
 def celsiusfahrenheit(celsius):
