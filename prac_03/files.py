@@ -13,3 +13,8 @@ with open("numbers.txt") as in_file:
         i += int(line)
     print(i)
 
+with open("numbers.txt") as in_file:
+    i = 0
+    for line in in_file:
+        i += int(line)
+    print(i)
