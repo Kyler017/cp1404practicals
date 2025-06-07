@@ -14,3 +14,9 @@ print(random.uniform(2.5, 5.5))  # line 3
 #What did you see on line 3?  numbers like 2.7,2.9,3.2,4.6
 #What was the smallest number you could have seen, what was the largest?  2.52337443,5.479874432
 
+#Write code, not a comment, to produce a random number between 1 and 100 inclusive.
+
+import random
+
+random_number = random.randint(1, 100)
+print(f"{random_number}")
