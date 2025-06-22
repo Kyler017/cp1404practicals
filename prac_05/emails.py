@@ -13,3 +13,8 @@ def main():
         print(f"{name} {email}")
 
 
+def get_name_from_email(email):
+    prefix = email.split('@')[0]
+    parts = prefix.split('.')
+    name = " "
+    return name
