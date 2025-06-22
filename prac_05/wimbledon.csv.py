@@ -31,3 +31,18 @@ def champions_input(players):
     return players_dict
 
 
+def count_countries(players):
+    countries = set(player[0] for player in players)
+    return sorted(countries)
+
+
+def print_results(players_dict, countries_list):
+    print("Wimbledon champions")
+    for player in players_dict:
+        print("{}: {}".format(player, players_dict[player]))
+
+    print("\nCountries of champions")
+    print(','.join(countries_list))
+
+
+main()
