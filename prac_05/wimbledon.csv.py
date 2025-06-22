@@ -19,3 +19,15 @@ def main():
         print_results(players_dict, countries_list)
 
 
+# turn the list into a dictionary
+def champions_input(players):
+    players_dict = {}
+    for player in players:
+        if player[1] in players_dict:
+            players_dict[player[1]] += 1
+        else:
+            players_dict[player[1]] = 1
+
+    return players_dict
+
+
