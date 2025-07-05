@@ -13,3 +13,8 @@ class Guitar:
         self.year = year
         self.cost = cost
 
+    def get_age(self):
+        current_year = datetime.now().year
+        return current_year - self.year
+
+
