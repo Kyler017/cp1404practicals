@@ -1,7 +1,7 @@
 from guitar import Guitar
 
 def main():
-    current_year = 2025  # 手动设定当前年份以便比较
+    current_year = 2025
 
     guitar1 = Guitar("Gibson L-5 CES", 1922, 16035.40)
     expected_age1 = current_year - 1922
