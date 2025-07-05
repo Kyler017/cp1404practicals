@@ -17,4 +17,7 @@ class Guitar:
         current_year = datetime.now().year
         return current_year - self.year
 
+    def is_vintage(self):
+        return self.get_age() >= 50
+
 
