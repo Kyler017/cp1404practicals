@@ -20,4 +20,5 @@ class Guitar:
     def is_vintage(self):
         return self.get_age() >= 50
 
-
+    def __str__(self):
+        return f"{self.name} ({self.year}) : ${self.cost:,.2f}"
