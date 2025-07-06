@@ -12,4 +12,4 @@ just like what i have said in question 2,sometime i pay no attention to the clas
 
 
 What is one request you have or change you suggest for this subject and/or your IT degree overall?
-no suggestions
+no suggestions.
