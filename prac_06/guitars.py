@@ -29,3 +29,19 @@ def main():
     save_guitars(FILENAME, guitars)
 
 
+def load_guitars(filename):
+    guitars = []
+    try:
+        with open(filename, "r") as in_file:
+            for line in in_file:
+                parts = line.strip().split(",")
+                name = parts[0]
+                year = int(parts[1])
+                cost = float(parts[2])
+                guitars.append(Guitar(name, year, cost))
+    except FileNotFoundError:
+        print(f"{filename} not found. Starting with an empty list.")
+    return guitars
+
+
+
