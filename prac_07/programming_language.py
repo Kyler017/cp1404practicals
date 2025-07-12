@@ -7,4 +7,8 @@ class ProgrammingLanguage:
         self.year = year
         self.pointer_arithmetic = pointer_arithmetic
 
+    def __repr__(self):
+        return (f"{self.name}, {self.typing} Typing, Reflection={self.reflection}, "
+                f"PointerArithmetic={self.pointer_arithmetic}, First appeared in {self.year}")
+
 
