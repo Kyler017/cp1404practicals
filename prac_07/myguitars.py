@@ -10,3 +10,8 @@ def load_guitars(filename):
     return guitar_collection
 
 
+def display_guitars(guitars):
+    for guitar in guitars:
+        print(f"{guitar.name}, {guitar.year}, ${guitar.cost:.2f}")
+
+
