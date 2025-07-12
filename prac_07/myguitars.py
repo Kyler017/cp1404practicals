@@ -15,3 +15,12 @@ def display_guitars(guitars):
         print(f"{guitar.name}, {guitar.year}, ${guitar.cost:.2f}")
 
 
+def add_new_guitar(guitars):
+    name = input("Enter guitar name (or blank to stop): ")
+    while name:
+        year = int(input("Enter year: "))
+        cost = float(input("Enter cost: "))
+        guitars.append(Guitar(name, year, cost))
+        name = input("Enter guitar name (or blank to stop): ")
+
+
