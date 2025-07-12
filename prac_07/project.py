@@ -6,3 +6,6 @@ class Project:
         self.cost_estimate = cost_estimate
         self.completion_percentage = completion_percentage
 
+    def __lt__(self, other):
+        return self.priority < other.priority
+
