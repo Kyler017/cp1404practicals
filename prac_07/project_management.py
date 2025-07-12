@@ -12,3 +12,11 @@ def load_projects(filename):
     return projects_collection
 
 
+def save_projects(filename, projects):
+    output_file = open(filename, 'w')
+    output_file.write("Name\tStart Date\tPriority\tCost Estimate\tCompletion Percentage\n")
+    for project_instance in projects:
+        output_file.write(
+            f"{project_instance.name}\t{project_instance.start_date}\t{project_instance.priority}\t{project_instance.cost_estimate}\t{project_instance.completion_percentage}\n")
+
+
