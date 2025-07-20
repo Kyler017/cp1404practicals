@@ -13,6 +13,10 @@ class DynamicLabelsApp(App):
         self.create_labels()
         return self.root
 
-
+    def create_labels(self):
+        for i in range(len(self.names)):
+            name = self.names[i]
+            label = Label(text=str(name))
+            self.root.ids.main.add_widget(label)
 
 
