@@ -23,4 +23,11 @@ class MilesConverterApp(App):
         self.root.ids.input_miles.text = str(miles)
         self.handle_calculate()
 
+    def get_miles(self):
+        try:
+            return float(self.root.ids.input_miles.text)
+        except ValueError:
+            return 0
 
+
+MilesConverterApp().run()
