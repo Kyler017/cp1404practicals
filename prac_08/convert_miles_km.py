@@ -13,3 +13,8 @@ class MilesConverterApp(App):
         self.root = Builder.load_file("convert_miles_km.kv")
         self.result_text = "0.0"
 
+    def handle_calculate(self):
+        miles = self.get_miles()
+        km = miles * MILES_TO_KM
+        self.result_text = str(km)
+
