@@ -10,3 +10,6 @@ class Band:
         self.name = name
         self.musicians = []
 
+    def add(self, musician):
+        self.musicians.append(musician)
+
