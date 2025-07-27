@@ -17,4 +17,7 @@ class Taxi(Car):
         return (f"{super().__str__()}, {self.current_fare_distance}km on current fare, "
                 f"${self.price_per_km:.2f}/km")
 
+    def get_fare(self):
+        return self.current_fare_distance * self.price_per_km
+
 
