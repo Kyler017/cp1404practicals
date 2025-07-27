@@ -23,4 +23,7 @@ class Taxi(Car):
     def start_fare(self):
         self.current_fare_distance = 0
 
-
+    def drive(self, distance):
+        distance_driven = super().drive(distance)
+        self.current_fare_distance += distance_driven
+        return distance_driven
