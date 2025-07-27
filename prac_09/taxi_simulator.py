@@ -58,4 +58,11 @@ def choose_taxi(taxis):
     return None
 
 
+def drive_taxi(taxi):
+    distance = float(input("Drive how far? "))
+    taxi.start_fare()
+    taxi.drive(distance)
+    return taxi.get_fare()
 
+
+main()
