@@ -13,4 +13,8 @@ class Taxi(Car):
         super().__init__(name, fuel)
         self.current_fare_distance = 0
 
+    def __str__(self):
+        return (f"{super().__str__()}, {self.current_fare_distance}km on current fare, "
+                f"${self.price_per_km:.2f}/km")
+
 
