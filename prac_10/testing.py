@@ -15,6 +15,7 @@ def repeat_string(s, n):
     return " ".join(repeated)
 
 
-
+def is_long_word(word, length=5):
+    return len(word) >= length
 
 
