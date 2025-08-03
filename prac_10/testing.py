@@ -19,3 +19,15 @@ def is_long_word(word, length=5):
     return len(word) >= length
 
 
+def format_sentence(phrase):
+    if phrase == "":
+        return "."
+
+    formatted = phrase.strip()
+    sentence = formatted[0].upper() + formatted[1:]
+    if not sentence.endswith("."):
+        sentence += "."
+    return sentence
+
+
+
